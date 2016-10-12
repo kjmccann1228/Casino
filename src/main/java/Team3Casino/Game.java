@@ -11,10 +11,49 @@ public abstract class Game {
     Random random = new Random();
 
 
-    public void takeBet(Player p){
+    protected void takeBet(Player p){
         //TODO
     }
-    public void settleAllBets(){
+    protected void settleAllBets(){
+        //TODO
+    }
+    protected void addPlayerToMap() {
+        //TODO
+    }
+    protected void removePlayerFromMap(){
+        //TODO
+    }
+    protected void displayGameMenu(){
+        //TODO
+    }
+    protected void gameMenuSwitch(){
+        //TODO
+    }
+    protected void displayPlayAgainMenu(){
+        //TODO
+    }
+    protected void playAgainSwitch(){
+        //TODO
+    }
+    protected void evaluateWinner(){
+        //TODO
+    }
+    protected void displayGameResults(){
+        //TODO
+    }
+    protected void playRoundOfGame(){
+        //TODO
+    }
+    protected void initalizeNewGameRound(){
+        //TODO
+    }
+    protected void displayPlayerOptions(){
+        //TODO
+    }
+    protected void performPlayerAction(Player p){
+        //TODO
+    }
+    protected void performComputerPlayerAction(){
         //TODO
     }
 
