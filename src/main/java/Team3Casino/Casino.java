@@ -5,7 +5,7 @@ package Team3Casino;
  */
 public class Casino {
 
-    public void init(){
+    public void run(){
         System.out.println("HEY I'M A CASINO");
     }
 }

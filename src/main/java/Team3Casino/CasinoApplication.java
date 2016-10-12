@@ -6,6 +6,6 @@ package Team3Casino;
 public class CasinoApplication {
     public static void main(String[] args) {
         Casino casino = new Casino();
-        casino.init();
+        casino.run();
     }
 }
