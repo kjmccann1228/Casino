@@ -7,7 +7,14 @@ public class Player {
     private double balance;
     private String userName;
     private String passWord;
-    private String userID; //Maybe change this to int??
+    private int userId; //Maybe change this to int??
+
+    public Player(int userId, String userName, String passWord) {
+        this.userName = userName;
+        this.userId = userId;
+        this.passWord = passWord;
+
+    }
 
     //I created methods for all getters / setters... can delete the ones we dont want to use...
 
@@ -23,23 +30,11 @@ public class Player {
         return userName;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
     public String getPassWord() {
         return passWord;
     }
 
-    public void setPassWord(String passWord) {
-        this.passWord = passWord;
-    }
+    public int getUserID() { return userId; }
 
-    public String getUserID() {
-        return userID;
-    }
 
-    public void setUserID(String userID) {
-        this.userID = userID;
-    }
 }

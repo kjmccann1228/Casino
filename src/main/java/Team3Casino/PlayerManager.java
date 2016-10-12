@@ -7,22 +7,27 @@ import java.util.List;
 
 public class PlayerManager {
 
-    List<Player> listOfPlayer = new ArrayList<Player>();
-    static int playerCounter; // variable to count num of players made?
+    List<Player>  playersinCasino = new ArrayList<Player>();
+    static int playerCounter = 0;
 
 
-    void CreatePlayerAndAddToList(String name, String pass) {
-
+    void createPlayer(String name, String password) {
+        Player player = new Player(playerCounter, name, password);
+       playersinCasino.add(player);
+        ++playerCounter;
     }
 
-    void GetPlayer(String name, String pass) {
-
-    }
-
-    String checkBalance(Player player) {
-
+    Player getPlayerById(int userID, String password) {
+        for(Player player: playersinCasino) {
+            if(player.getPassWord().equals(password) && player.getUserID() == userID) {
+                return player;
+            }
+        }
         return null;
+
     }
+
+
 
 
 }
