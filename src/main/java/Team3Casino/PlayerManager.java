@@ -7,17 +7,18 @@ import java.util.List;
 
 public class PlayerManager {
 
-    List<Player>  playersinCasino = new ArrayList<Player>();
+    public List<Player>  playersinCasino = new ArrayList<Player>();
     static int playerCounter = 0;
 
 
-    void createPlayer(String name, String password) {
-        Player player = new Player(playerCounter, name, password);
-       playersinCasino.add(player);
+    public Player createPlayer(String name, String password) {
         ++playerCounter;
+        Player player = new Player(playerCounter, name, password);
+        playersinCasino.add(player);
+        return player;
     }
 
-    Player getPlayerById(int userID, String password) {
+    public Player getPlayerById(int userID, String password) {
         for(Player player: playersinCasino) {
             if(player.getPassWord().equals(password) && player.getUserID() == userID) {
                 return player;

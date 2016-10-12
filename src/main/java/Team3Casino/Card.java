@@ -2,7 +2,7 @@ package Team3Casino;
 /**
  * Created by zaclee on 9/28/16. -- feel free to scrap / change this if needed
  */
-public class Card {
+public class Card implements Comparable {
 
     public final static int SPADES = 0, HEARTS = 1, DIAMONDS = 2, CLUBS = 3;
     public final static int ACE = 1, JACK = 11, QUEEN = 12, KING = 13;
@@ -54,6 +54,33 @@ public class Card {
     public String getCardName() {
         name = this.getValueAsString() + " of " + this.getSuitAsString();
         return name;
+    }
+
+    public int compareTo(Object o) {
+        if(o == null){
+            throw new NullPointerException("Object to compare was null");
+        }
+        if(!(o.getClass().equals(this.getClass()))){
+            throw new ClassCastException(("Objects are not the same class"));
+        }
+
+        Card comp = (Card)o;
+        if(this.value == comp.value){
+            return 0;
+        }
+        if(this.value == 1){
+            return 1;
+        }
+        if(comp.value == 1){
+            return -1;
+        }
+        if(this.value > comp.value){
+            return 1;
+        }
+        if(this.value < comp.value){
+            return -1;
+        }
+        return 0;
     }
 
 //    public int getBlackJackValue() {
