@@ -1,3 +1,5 @@
+package Team3CasinoTests;
+
 import Team3Casino.PlayerManager;
 import Team3Casino.Player;
 import org.junit.Assert;
