@@ -9,6 +9,8 @@ public class Player {
     private String passWord;
     private String userID; //Maybe change this to int??
 
+    //I created methods for all getters / setters... can delete the ones we dont want to use...
+
     public double getBalance() {
         return balance;
     }
