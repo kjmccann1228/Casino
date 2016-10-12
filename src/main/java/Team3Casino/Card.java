@@ -1,3 +1,4 @@
+package Team3Casino;
 /**
  * Created by zaclee on 9/28/16. -- feel free to scrap / change this if needed
  */
